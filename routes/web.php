@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//for index
+Route::get('/', "UrlPageController@index");
+Route::get('/index', "UrlPageController@index");
+Route::get('/inicio', "UrlPageController@index");
+
+//for trailers
+Route::get('/trailers', "UrlPageController@trailers");
+
+//for contacto
+Route::get('/contacto', "UrlPageController@contacto");
+
+//for login
+Route::get('/login', "UrlPageController@login");
+
